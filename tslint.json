@@ -1,0 +1,25 @@
+{
+  "defaultSeverity": "error",
+  "linterOptions": {
+    "exclude": ["**/*.js"]
+  },
+  "extends": ["tslint:recommended"],
+  "jsRules": {},
+  "rules": {
+    "quotemark": [true, "single", "avoid-escape", "avoid-template"],
+    "arrow-parens": [true, "ban-single-arg-parens"],
+    "variable-name": [true, "ban-keywords", "check-format", "allow-leading-underscore"],
+    "trailing-comma": false,
+    "only-arrow-functions": false,
+    "prefer-const": [true, { "destructuring": "all" }],
+    "no-string-literal": false,
+    "forin": false,
+    "no-shadowed-variable": false,
+    "no-bitwise": false,
+    "cyclomatic-complexity": [true, 8],
+    "indent": [true, "spaces", 2],
+    "max-line-length": [true, 150],
+    "no-namespace": false
+  },
+  "rulesDirectory": []
+}
