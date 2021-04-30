@@ -1,14 +1,14 @@
 import { NextFunction, Request, Response } from 'express';
+import { CountryRepository } from '../repository/country.repository';
 
 export class CountryController {
 
-  public getAllCountries(_req: Request, res: Response, next: NextFunction) {
+  public constructor(private readonly countryRepository: CountryRepository) {
+  }
+
+  public async getAll(_req: Request, res: Response, next: NextFunction) {
     try {
-      const countries = [
-        { id: 1, name: 'Ukraine' },
-        { id: 2, name: 'Poland' },
-        { id: 3, name: 'USA' },
-      ];
+      const countries = await this.countryRepository.getAll();
 
       res.json(countries);
     } catch (err) {
