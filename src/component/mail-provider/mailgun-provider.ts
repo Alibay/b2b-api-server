@@ -1,4 +1,4 @@
-import { IMailProvider } from './mail.provider';
+import { IMailProvider } from './mail-provider';
 
 export class MailgunProvider implements IMailProvider {
 

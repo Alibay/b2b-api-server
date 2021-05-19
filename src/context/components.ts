@@ -1,6 +1,6 @@
 import { Client } from '@elastic/elasticsearch';
 import config from 'config';
-import { FakeProvider } from '../component/mail-provider/fake.provider';
+import { FakeProvider } from '../component/mail-provider/fake-provider';
 import { BcryptPasswordEncoder } from '../component/password-encoder/bcrypt-password-encoder';
 import { ElasticSearchProvider } from '../component/search-engine-provider/elastic-search-provider';
 

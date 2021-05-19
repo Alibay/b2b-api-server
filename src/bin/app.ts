@@ -10,7 +10,7 @@ const port = config.get<number>('port');
 
 const logger = getLogger('app');
 
-const app = express()
+export const app = express()
   .use(cors())
   .use(authMiddleware)
   .use('/api/v1', router)

@@ -1,4 +1,4 @@
-import { IMailProvider } from '../component/mail-provider/mail.provider';
+import { IMailProvider } from '../component/mail-provider/mail-provider';
 
 export class MailService {
 

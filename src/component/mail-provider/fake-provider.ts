@@ -1,6 +1,6 @@
 import { Logger } from 'pino';
 import { getLogger } from '../../context';
-import { IMailProvider } from './mail.provider';
+import { IMailProvider } from './mail-provider';
 
 export class FakeProvider implements IMailProvider {
 
